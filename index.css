@@ -1,0 +1,195 @@
+
+/* Universal Styling: */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Styling */
+body{
+    display: flex;
+    flex-flow: column;
+    /* vertical centre */
+    align-items: center;  
+    justify-content: center;
+    /* background-color: #1EC3EC; */
+    /* background-color: black; */
+    /* background-color: #CECCCC; */
+    background-image:url("cesar-couto-sKuVjm0xyLY-unsplash.jpg") ;
+    background-size: 1400px;
+    /* background-color: white; */
+
+}
+
+/* Header Styling */
+header{
+    /* background-color: #FFEEAA; */
+    /* background-color: #8ECA78; */
+    background-color: #EBEDF3 ;
+    width: 100%;
+    height: 50px;
+    /* text-align: center; */
+    text-align: center;
+    /* margin: 5px; */
+    margin-bottom: 15px;
+    /* border-radius: 25px; */
+    border-bottom:3px solid black;
+}
+
+/* Index Header */
+#indx_hdr{
+    height: 70px;
+}
+#indx_hdr h1{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+header h1{
+    /* margin: 10px; */
+    padding-bottom: 15px;
+    padding-top: 15px;
+    font-size: 30px;
+    /* text-decoration: underline; */
+    /* font-family: 'Satisfy', cursive; */
+    /* font-family: 'Goblin One', cursive; */
+    font-family: 'Recursive', sans-serif;
+    opacity: 0.7;  /*for transparency*/
+}
+header h1::first-letter{
+    color:#A13E06;
+}
+/* FOOTER STYLING  */
+footer{
+    width: 100%;
+    background-color:black;
+    text-align: center;
+    color: white;
+    opacity: 0.6;
+    padding: 30px;
+    margin-top: 145px;
+    height: 90px;
+}
+
+/* Service section styling: */
+#services{
+    width: 100%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    margin-bottom:40px ;
+    margin-top: 20px ;
+    text-decoration: underline;
+    color: #0C173E ;
+}
+
+/* Input Styling: */
+#pname{
+    margin-top: 30px;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #FFEEAA ;
+    /* background-color: transparent; */
+    border:none;
+    border-bottom:8px solid black;
+    border-radius: 20px;
+    margin-left: 80px;
+    color: black;
+    position: relative;
+    left:15px
+}
+
+/* Button Styling: */
+#btn{
+    font-family: 'Goblin One', cursive;
+    /* font-size: 10px; */
+    font-weight: 100;
+    background-color: rgb(17, 17, 82);
+    /* background-color: transparent; */
+    position: relative;
+    left:120px;
+    bottom: 10px;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+#btn:hover{
+    background-color: black;
+    /* color: black; */
+    box-shadow:2px 2px 2px 2px ;
+}
+
+/* Canvas Styling: */
+#canva{
+    height: 330px;
+    width: 600px;
+    /* background-color: red; */
+    border:4px solid black;
+}
+
+/*Styling of multiple pages  */
+nav{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.nav_bar{
+    list-style-type: none;
+    /* background-color: black; */
+    height: 30px;
+    /* display: none; */
+}
+.nav_bar li{
+    margin: 5px;
+    padding: 8px;
+    display: inline-block;
+    background-color: transparent;
+    border-radius: 10px;
+    margin-left: 140px;
+    margin-right: 140px;
+    border-bottom: 4px solid black;
+}
+.nav_bar li:hover{
+    box-shadow: 5px 2px 5px 2px ;
+    background-color: black;
+}
+a{
+    color:white;
+    font-size: 13px;
+}
+/* Index NAv Bar: */
+#indx_nav{
+    /* background-color: red; */
+    margin-bottom: 155px;
+}
+#indx_nav li{
+    padding:60px;
+    background-color: black;
+    border-radius: 20px;
+    /* margin-bottom: 50px; */
+}
+
+#hamburger{
+    display: flex;
+    margin-left: 30px;
+    padding: 8px;
+    background: transparent;
+    cursor: pointer;
+    border: 3px solid  black;
+    color: white;
+}
+#hamburger:hover{
+    background: white;
+    color:black
+}
+.menu{
+    display: none;
+}
