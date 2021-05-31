@@ -314,13 +314,29 @@ a{
 @media (max-width: 734px) and (max-height: 1380px) {
     #indx_hdr h1{
         padding-top: 20px;
-        font-size: 30px;
+        font-size: 20px;
     }
+    #services{
+        margin: 80px;
+        font-size: 20px;
+    }
+    #indx_nav{
+        /* background-color: red; */
+        margin-bottom: 250px;
+        margin-top: 80px;
+    }
+    #indx_nav li{
+        padding:60px;
+        background-color: black;
+        border-radius: 20px;
+        /* margin-bottom: 50px; */
+    }
+
 }
 @media (max-width: 512px) and (max-height: 1380px) {
     #indx_hdr{
         height: 100px;
-        width: 512px;
+        width: 600px;
     }
     footer{
         width: 512px;
