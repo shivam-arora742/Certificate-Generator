@@ -47,6 +47,7 @@
     <section>
             <label id="invalid" style="visibility:hidden;">INVALID:</label>
             <input type="text" name="person_name" id="pname" placeholder="Enter Name Here" autocomplete="off">
+            <input type="date" name="date" id="dateValueapp">
             <button type="button" id="btn" onclick="validate();"><a href="#" id="download" download="Certificate">Generate Certificate</a></button>
     </section>
 
@@ -79,17 +80,20 @@
         contx.drawImage(image,0,0,image.width,image.height);
 
         // dynamic text styling: 
-        contx.font='70px Recursive, sans-serif';
+        contx.font='60px Recursive, sans-serif';
         contx.fillStyle='black';
 
         // fillText has 3 args: name,x,y.
         contx.fillText(pname.value,750,750);
+        contx.fillText(dateValue.value,170,180);
 
         }
 
         // Adding text:
         // access the input object
         const pname=document.getElementById("pname");
+        const dateValue=document.getElementById("dateValueapp");
+
         // on 'input' event function will invoke.
         pname.addEventListener('input',()=>{
             drawImage();

@@ -47,6 +47,7 @@
     <section>
             <label id="invalid" style="visibility:hidden;">INVALID:</label>
             <input type="text" name="person_name" id="pname" placeholder="Enter Name Here" autocomplete="off">
+            <input type="date" name="date" id="dateValuerec">
             <button type="button" id="btn" onclick="validate();"><a href="#" id="download" download="Certificate">Generate Certificate</a></button>
     </section>
 
@@ -59,7 +60,7 @@
         const canvas=document.getElementById("canva");
         // console.log(canvas)
  
-         // The getContext() function :returns the drawing context - which is an object that has 
+        // The getContext() function :returns the drawing context - which is an object that has 
         // all the drawing properties and functions you use to draw on the canvas.
         const contx=canvas.getContext('2d');
 
@@ -80,15 +81,18 @@
         //drawImage()function takes following parameters:image(object),x-distance,y-distance,width,height. 
         contx.drawImage(image,0,0,image.width,image.height);
         // dynamic text styling: 
-        contx.font='80px Recursive, sans-serif';
+        contx.font='60px Recursive, sans-serif';
         contx.fillStyle='black';
 
         // fillText has 3 args: name,x,y.
         contx.fillText(pname.value,750,600);
+        contx.fillText(dateValue.value,100,160);
         }
         // Adding text:
         // access the input object
         const pname=document.getElementById("pname");
+        const dateValue=document.getElementById("dateValuerec");
+
         // on 'input' event function will invoke.
         pname.addEventListener('input',()=>{
             drawImage();

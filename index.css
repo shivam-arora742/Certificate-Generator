@@ -69,7 +69,7 @@ footer{
     opacity: 0.6;
     padding: 30px;
     margin-top: 145px;
-    height: 90px;
+    height: 80px;
 }
 
 /* Service section styling: */
@@ -86,20 +86,54 @@ footer{
 
 /* Input Styling: */
 #pname{
-    margin-top: 30px;
+    margin-top: 35px;
     padding: 10px;
-    width: 500px;
+    width: 350px;
     text-align: center;
     font-size: 20px;
     background-color: #FFEEAA ;
     /* background-color: transparent; */
     border:none;
-    border-bottom:8px solid black;
+    border-bottom:6px solid black;
     border-radius: 20px;
-    margin-left: 80px;
+    margin-left: 40px;
     color: black;
     position: relative;
-    left:15px
+    left:25px
+}
+#dateValueapp{
+    margin-left: 60px;
+    width: 160px;
+    font-size: 15px;
+    background-color: #FFEEAA ;
+    padding: 10px;
+    border:none;
+    border-bottom:4px solid black;
+    border-radius: 20px;
+
+}
+
+#dateValuecomp{
+    margin-left: 60px;
+    width: 160px;
+    font-size: 15px;
+    background-color: #FFEEAA ;
+    padding: 12px;
+    border:none;
+    border-bottom:4px solid black;
+    border-radius: 20px;
+
+}
+
+#dateValuerec{
+    margin-left: 60px;
+    width: 160px;
+    font-size: 15px;
+    background-color: #FFEEAA ;
+    padding: 12px;
+    border:none;
+    border-bottom:4px solid black;
+    border-radius: 20px;
 }
 
 /* Button Styling: */
@@ -137,8 +171,8 @@ footer{
 nav{
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 5px;
+    margin-bottom: 30px;
+    /* margin-top: 5px; */
     cursor: pointer;
 }
 .nav_bar{
@@ -192,4 +226,103 @@ a{
 }
 .menu{
     display: none;
+}
+
+/* Media Query: */
+@media (min-width: 1327px) and (min-height: 822px) {
+    body{
+        background-size: 3800px;
+    }
+    header{
+        margin-bottom: 100px;
+        height: 150px;
+    }
+    header h1{
+
+        padding: 50px;
+        /* padding-top: 10px; */
+    }
+    #indx_hdr{
+        height: 100px;
+    }
+    #indx_hdr h1{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    #services{
+        margin: 100px;
+        font-size: 35px;
+    }
+    #indx_nav{
+        /* background-color: red; */
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    #indx_nav li{
+        padding:80px;
+        background-color: black;
+        border-radius: 30px;
+        /* margin-bottom: 50px; */
+    }
+    footer{
+        height: 120px;
+        margin-top:500px;
+    }
+}
+
+@media (max-width: 1326px){
+    body{
+        background-size: 3800px;
+    }
+    header{
+        margin-bottom: 100px;
+        height: 150px;
+    }
+    header h1{
+
+        padding: 50px;
+        /* padding-top: 10px; */
+    }
+    #indx_hdr{
+        height: 100px;
+    }
+    #indx_hdr h1{
+        padding-top: 30px;
+        font-size: 40px;
+    }
+    #services{
+        margin: 100px;
+        font-size: 35px;
+    }
+    #indx_nav{
+        /* background-color: red; */
+        margin-bottom: 100px;
+        margin-top: 100px;
+    }
+    #indx_nav li{
+        padding:80px;
+        background-color: black;
+        border-radius: 30px;
+        /* margin-bottom: 50px; */
+    }
+    footer{
+        height: 120px;
+        margin-top:500px;
+    }
+}
+
+@media (max-width: 734px) and (max-height: 1380px) {
+    #indx_hdr h1{
+        padding-top: 20px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 512px) and (max-height: 1380px) {
+    #indx_hdr{
+        height: 100px;
+        width: 512px;
+    }
+    footer{
+        width: 512px;
+    }
 }
